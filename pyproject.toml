@@ -1,5 +1,5 @@
 [project]
-name = "fast-zero"
+name = "fastapi-zero"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Anderson S Ferreira", email = "havour@gmail.com" }]
@@ -48,7 +48,7 @@ addopts = '-p no:warnings'
 lint = 'ruff check'
 pre_format = 'ruff check --fix'
 format = 'ruff format'
-run = 'fastapi dev fast_zero/app.py'
+run = 'fastapi dev fastapi_zero/app.py'
 pre_test = 'task lint'
-test = 'pytest -s -x --cov=fast_zero -vv'
+test = 'pytest -s -x --cov=fastapi_zero -vv'
 post_test = 'coverage html'
